@@ -179,10 +179,12 @@ class HomePage extends StatelessWidget {
                     items: sliderImages.map((image) => Stack(
                       children: [
                         Container(
+                          margin: EdgeInsets.only(top:85),
                           width: double.infinity,
                           child: Image.asset(
                             'assets/logo.png', // Replace with your logo image path
-                            fit: BoxFit.fill,
+                            width: 120,
+                            height: 120,
                           ),
                         ),
                         Container(
